@@ -2,20 +2,22 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :customer_name %>
-    <%= f.input :customer_street %>
-    <%= f.input :customer_plz %>
-    <%= f.input :customer_city %>
-    <%= f.input :customer_country %>
-    <%= f.input :customer_telephone %>
-    <%= f.input :customer_state %>
+    <%= f.input :customer_name, required: true, autofocus: true %>
     <%= f.input :customer_contact %>
-    <%= f.input :customer_telefax %>
-    <%= f.input :customer_email %>
-    <%= f.input :customer_homepage %>
+    <%= f.input :customer_street, required: true %>
+    <%= f.input :customer_plz, required: true %>
+    <%= f.input :customer_city, required: true %>
+    <%= f.input :customer_state %>
+    <%= f.input :customer_country, required: true %>
+    <%= f.input :customer_telephone, as: :tel, required: true %>   
+    <%= f.input :customer_telefax, as: :tel %>
+    <%= f.input :customer_email, as: :email %>
+    <%= f.input :customer_homepage, as: :url %>
+    
     <%= f.input :customer_is_active %>
     <%= f.input :customer_show_email %>
-    <%= f.association :user %>
+    
+    <%= f.association :user, :label_method => :email, :value_method => :id %>
   </div>
 
   <div class="form-actions">

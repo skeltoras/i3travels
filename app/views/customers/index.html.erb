@@ -1,23 +1,19 @@
+<% provide(:dtitle, 'Only Admin') %>
+<div class="container theme-showcase" role="main">
 <h1>Listing customers</h1>
 
-<table>
+<table class="table table-condensed table-hover">
   <thead>
     <tr>
       <th>Customer name</th>
-      <th>Customer street</th>
+      <th>Customer contact</th>
       <th>Customer plz</th>
       <th>Customer city</th>
-      <th>Customer country</th>
       <th>Customer telephone</th>
-      <th>Customer state</th>
-      <th>Customer contact</th>
-      <th>Customer telefax</th>
       <th>Customer email</th>
       <th>Customer homepage</th>
       <th>Customer is active</th>
-      <th>Customer show email</th>
-      <th>User</th>
-      <th colspan="3"></th>
+      <th colspan="2"></th>
     </tr>
   </thead>
 
@@ -25,27 +21,19 @@
     <% @customers.each do |customer| %>
       <tr>
         <td><%= customer.customer_name %></td>
-        <td><%= customer.customer_street %></td>
+        <td><%= customer.customer_contact %></td>
         <td><%= customer.customer_plz %></td>
         <td><%= customer.customer_city %></td>
-        <td><%= customer.customer_country %></td>
         <td><%= customer.customer_telephone %></td>
-        <td><%= customer.customer_state %></td>
-        <td><%= customer.customer_contact %></td>
-        <td><%= customer.customer_telefax %></td>
         <td><%= customer.customer_email %></td>
         <td><%= customer.customer_homepage %></td>
         <td><%= customer.customer_is_active %></td>
-        <td><%= customer.customer_show_email %></td>
-        <td><%= customer.user %></td>
         <td><%= link_to 'Show', customer %></td>
-        <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
-        <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit', edit_customer_path(customer) %></td>      
       </tr>
     <% end %>
   </tbody>
 </table>
-
 <br>
-
 <%= link_to 'New Customer', new_customer_path %>
+</div>

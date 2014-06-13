@@ -1,2 +1,16 @@
-<h1>StaticPages#debug</h1>
-<p>Find me in app/views/static_pages/debug.html.erb</p>
+<h1>Debug Page</h1>
+
+<h2>User-Info</h2>
+
+<% if user_signed_in? %>
+  <p>Signed in as: <%= current_user.email %></p>
+  <p><%= link_to 'Log Out', destroy_user_session_path, :method => 'delete', :confirm => 'Are you sure?' %></p>
+<% else %>
+  <p>User not signed in. Login?</p>
+  <p><%= link_to 'Log In', new_user_session_path %></p>
+<% end %>
+
+<h2>Environment</h2>
+
+<%= "Environment: #{RAILS_ENV}" %>
+	

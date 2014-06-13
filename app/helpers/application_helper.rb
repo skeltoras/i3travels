@@ -7,4 +7,13 @@ module ApplicationHelper
       when :alert then "alert alert-alert"
     end
   end
+  
+  def debug_info(infotext)
+    if infotext.blank?
+      #"#{infotext}"
+    else
+      text = "Debug Info: #{infotext}"
+      simple_format(text, wrapper_tag: "div", class: "alert alert-info") 
+    end    
+  end
 end

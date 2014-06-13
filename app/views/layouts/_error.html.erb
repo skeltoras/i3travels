@@ -1,4 +1,7 @@
 <div id="error" class="container">
+	<% if Rails.env.development? %>	  
+	    <%= debug_info(yield(:dtitle)) %>
+	<% end %>
 	<% [:notice, :error, :alert, :success].each do |level| %>
 	  <% unless flash[level].blank? %>
 	    <div class="<%= flash_class(level) %>">
