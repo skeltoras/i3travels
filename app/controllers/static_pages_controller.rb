@@ -11,7 +11,10 @@ class StaticPagesController < ApplicationController
   def imprint
   end
 
-  def login
+  def signup
+  end
+
+  def signin
   end
 
   def help

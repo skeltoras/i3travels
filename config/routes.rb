@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'static_pages/signup'
+
+  get 'static_pages/signin'
+
   resources :rentings
 
   resources :travels
