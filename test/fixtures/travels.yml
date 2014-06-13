@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  travel_type: MyString
+  travel_arrival: MyString
+  travel_location: MyString
+  travel_region: MyString
+  travel_country: MyString
+  travel_display_offer: MyString
+  travel_object_shortdesc: MyString
+  travel_object_longdesc: MyText
+  travel_gallery: false
+  travel_header_picture: false
+  travel_header_slider: false
+  travel_video: false
+  travel_calendar: false
+  travel_form: false
+  travel_calendar_start: 2014-06-13
+  travel_calendar_end: 2014-06-13
+  customer_id: 
+
+two:
+  travel_type: MyString
+  travel_arrival: MyString
+  travel_location: MyString
+  travel_region: MyString
+  travel_country: MyString
+  travel_display_offer: MyString
+  travel_object_shortdesc: MyString
+  travel_object_longdesc: MyText
+  travel_gallery: false
+  travel_header_picture: false
+  travel_header_slider: false
+  travel_video: false
+  travel_calendar: false
+  travel_form: false
+  travel_calendar_start: 2014-06-13
+  travel_calendar_end: 2014-06-13
+  customer_id: 

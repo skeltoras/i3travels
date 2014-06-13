@@ -1,0 +1,57 @@
+<h1>Listing travels</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Travel type</th>
+      <th>Travel arrival</th>
+      <th>Travel location</th>
+      <th>Travel region</th>
+      <th>Travel country</th>
+      <th>Travel display offer</th>
+      <th>Travel object shortdesc</th>
+      <th>Travel object longdesc</th>
+      <th>Travel gallery</th>
+      <th>Travel header picture</th>
+      <th>Travel header slider</th>
+      <th>Travel video</th>
+      <th>Travel calendar</th>
+      <th>Travel form</th>
+      <th>Travel calendar start</th>
+      <th>Travel calendar end</th>
+      <th>Customer</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @travels.each do |travel| %>
+      <tr>
+        <td><%= travel.travel_type %></td>
+        <td><%= travel.travel_arrival %></td>
+        <td><%= travel.travel_location %></td>
+        <td><%= travel.travel_region %></td>
+        <td><%= travel.travel_country %></td>
+        <td><%= travel.travel_display_offer %></td>
+        <td><%= travel.travel_object_shortdesc %></td>
+        <td><%= travel.travel_object_longdesc %></td>
+        <td><%= travel.travel_gallery %></td>
+        <td><%= travel.travel_header_picture %></td>
+        <td><%= travel.travel_header_slider %></td>
+        <td><%= travel.travel_video %></td>
+        <td><%= travel.travel_calendar %></td>
+        <td><%= travel.travel_form %></td>
+        <td><%= travel.travel_calendar_start %></td>
+        <td><%= travel.travel_calendar_end %></td>
+        <td><%= travel.customer %></td>
+        <td><%= link_to 'Show', travel %></td>
+        <td><%= link_to 'Edit', edit_travel_path(travel) %></td>
+        <td><%= link_to 'Destroy', travel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Travel', new_travel_path %>

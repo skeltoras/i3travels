@@ -1,0 +1,29 @@
+<%= simple_form_for(@renting) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :renting_object %>
+    <%= f.input :renting_min_duration %>
+    <%= f.input :renting_cost %>
+    <%= f.input :renting_cost_duration %>
+    <%= f.input :renting_location %>
+    <%= f.input :renting_region %>
+    <%= f.input :renting_country %>
+    <%= f.input :renting_display_offer %>
+    <%= f.input :renting_object_shortdesc %>
+    <%= f.input :renting_object_longdesc %>
+    <%= f.input :renting_gallery %>
+    <%= f.input :renting_header_picture %>
+    <%= f.input :renting_header_slider %>
+    <%= f.input :renting_video %>
+    <%= f.input :renting_calendar %>
+    <%= f.input :renting_form %>
+    <%= f.input :renting_calendar_start %>
+    <%= f.input :renting_calendar_end %>
+    <%= f.association :customer %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

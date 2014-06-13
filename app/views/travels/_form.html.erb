@@ -1,0 +1,27 @@
+<%= simple_form_for(@travel) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :travel_type %>
+    <%= f.input :travel_arrival %>
+    <%= f.input :travel_location %>
+    <%= f.input :travel_region %>
+    <%= f.input :travel_country %>
+    <%= f.input :travel_display_offer %>
+    <%= f.input :travel_object_shortdesc %>
+    <%= f.input :travel_object_longdesc %>
+    <%= f.input :travel_gallery %>
+    <%= f.input :travel_header_picture %>
+    <%= f.input :travel_header_slider %>
+    <%= f.input :travel_video %>
+    <%= f.input :travel_calendar %>
+    <%= f.input :travel_form %>
+    <%= f.input :travel_calendar_start %>
+    <%= f.input :travel_calendar_end %>
+    <%= f.association :customer %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

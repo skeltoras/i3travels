@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  renting_object: MyString
+  renting_min_duration: MyString
+  renting_cost: MyString
+  renting_cost_duration: MyString
+  renting_location: MyString
+  renting_region: MyString
+  renting_country: MyString
+  renting_display_offer: MyString
+  renting_object_shortdesc: MyString
+  renting_object_longdesc: MyText
+  renting_gallery: false
+  renting_header_picture: false
+  renting_header_slider: false
+  renting_video: false
+  renting_calendar: false
+  renting_form: false
+  renting_calendar_start: 2014-06-13
+  renting_calendar_end: 2014-06-13
+  customer_id: 
+
+two:
+  renting_object: MyString
+  renting_min_duration: MyString
+  renting_cost: MyString
+  renting_cost_duration: MyString
+  renting_location: MyString
+  renting_region: MyString
+  renting_country: MyString
+  renting_display_offer: MyString
+  renting_object_shortdesc: MyString
+  renting_object_longdesc: MyText
+  renting_gallery: false
+  renting_header_picture: false
+  renting_header_slider: false
+  renting_video: false
+  renting_calendar: false
+  renting_form: false
+  renting_calendar_start: 2014-06-13
+  renting_calendar_end: 2014-06-13
+  customer_id: 

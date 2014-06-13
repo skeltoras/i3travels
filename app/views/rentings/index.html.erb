@@ -1,0 +1,61 @@
+<h1>Listing rentings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Renting object</th>
+      <th>Renting min duration</th>
+      <th>Renting cost</th>
+      <th>Renting cost duration</th>
+      <th>Renting location</th>
+      <th>Renting region</th>
+      <th>Renting country</th>
+      <th>Renting display offer</th>
+      <th>Renting object shortdesc</th>
+      <th>Renting object longdesc</th>
+      <th>Renting gallery</th>
+      <th>Renting header picture</th>
+      <th>Renting header slider</th>
+      <th>Renting video</th>
+      <th>Renting calendar</th>
+      <th>Renting form</th>
+      <th>Renting calendar start</th>
+      <th>Renting calendar end</th>
+      <th>Customer</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rentings.each do |renting| %>
+      <tr>
+        <td><%= renting.renting_object %></td>
+        <td><%= renting.renting_min_duration %></td>
+        <td><%= renting.renting_cost %></td>
+        <td><%= renting.renting_cost_duration %></td>
+        <td><%= renting.renting_location %></td>
+        <td><%= renting.renting_region %></td>
+        <td><%= renting.renting_country %></td>
+        <td><%= renting.renting_display_offer %></td>
+        <td><%= renting.renting_object_shortdesc %></td>
+        <td><%= renting.renting_object_longdesc %></td>
+        <td><%= renting.renting_gallery %></td>
+        <td><%= renting.renting_header_picture %></td>
+        <td><%= renting.renting_header_slider %></td>
+        <td><%= renting.renting_video %></td>
+        <td><%= renting.renting_calendar %></td>
+        <td><%= renting.renting_form %></td>
+        <td><%= renting.renting_calendar_start %></td>
+        <td><%= renting.renting_calendar_end %></td>
+        <td><%= renting.customer %></td>
+        <td><%= link_to 'Show', renting %></td>
+        <td><%= link_to 'Edit', edit_renting_path(renting) %></td>
+        <td><%= link_to 'Destroy', renting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Renting', new_renting_path %>
