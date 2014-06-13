@@ -19,4 +19,7 @@ class StaticPagesController < ApplicationController
 
   def help
   end
+
+  def debug
+  end
 end
